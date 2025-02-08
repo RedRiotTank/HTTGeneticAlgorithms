@@ -1,4 +1,4 @@
-package htt.crossoveroperator;
+package htt.crossover;
 
 import java.util.Arrays;
 
@@ -14,9 +14,7 @@ public class PMXCrossover implements CrossoverOperator{
         int start = random.nextInt(n);
         int end = random.nextInt(n - start) + start;
 
-        for (int i = start; i <= end; i++) {
-            offspring[i] = parent1[i];
-        }
+        if (end + 1 - start >= 0) System.arraycopy(parent1, start, offspring, start, end + 1 - start);
 
         for (int i = 0; i < n; i++) {
             if (offspring[i] == -1) {

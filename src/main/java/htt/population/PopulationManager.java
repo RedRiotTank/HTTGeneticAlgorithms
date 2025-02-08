@@ -1,11 +1,11 @@
-package htt;
+package htt.population;
 
+import htt.data.DataLoader;
 import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static htt.Util.random;
 import static htt.Util.shuffleArray;
 
 

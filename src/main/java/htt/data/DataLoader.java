@@ -1,4 +1,4 @@
-package htt;
+package htt.data;
 
 import lombok.Data;
 import lombok.NonNull;

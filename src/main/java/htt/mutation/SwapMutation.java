@@ -1,4 +1,4 @@
-package htt.mutationoperator;
+package htt.mutation;
 
 import static htt.Util.random;
 

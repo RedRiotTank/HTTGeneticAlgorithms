@@ -1,13 +1,11 @@
-package htt;
+package htt.fitness;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class FitnessCalculator {
     private final int[][] flowMatrix;
     private final int[][] distanceMatrix;
-
-    public FitnessCalculator(int[][] flowMatrix, int[][] distanceMatrix) {
-        this.flowMatrix = flowMatrix;
-        this.distanceMatrix = distanceMatrix;
-    }
 
     public int calculate(int[] solution) {
         int cost = 0;
